@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
     <header>
-        <hr>
-    <nav>
+        <h3>Portfólio SI</h3>
+        <nav>
         <a href="index.html" >Home</a>
         <a href="sobre.html" >Sobre</a>
         <a href="habilidades.html" >Habilidades</a>
         <a href="cursos.html" >Cursos</a>
-    </nav>
-    <hr>
-    <h1>Nossas fomras de contato</h1>
+        </nav>
     </header>
+
+    <main>
+        <h1>Deixe seu contato!</h1>
+        <hr>
+        <div class="form-box">
+            <form>
+            <label for="name">Nome completo: </label>
+            <input id="name" name="nome" type="text" placeholder="Nome completo">
+            <br/>
+
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="text" placeholder="Email">
+            <br/>
+
+            <label for="mensagem">Deixe uma mensagem: </label>
+            <textarea id="mensagem" name="mensagem" type="text" placeholder="Sua mensagem"></textarea>
+            <br/>
+
+            <button type="submit">enviar</button>
+            </form>  
+        </div>    
+    </main>
+
+    <footer>
+        <span>© 2026 - Selton & Clarissa</span>
+    </footer>
 </body>
 </html>

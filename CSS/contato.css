@@ -22,29 +22,19 @@ h1 {
     margin: 20px;
 }
 
-h2, p {
-    color:  rgb(68, 68, 68);
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-.pessoa {
-    text-align: center;
-    margin: 20px;
+.form-box {
     background-color: rgb(196, 185, 155);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-size: large;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 10px;
 }
 
 footer {
