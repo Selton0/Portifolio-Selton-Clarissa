@@ -21,26 +21,28 @@
         <h1>Deixe seu contato!</h1>
         <hr>
         <div class="form-box">
-            <form>
+            <form id="formContato">
             <label for="name">Nome completo: </label>
             <input id="name" name="nome" type="text" placeholder="Nome completo">
             <br/>
 
             <label for="email">Email: </label>
-            <input id="email" name="email" type="text" placeholder="Email">
+            <input id="email" name="email" type="email" placeholder="Email">
             <br/>
 
             <label for="mensagem">Deixe uma mensagem: </label>
-            <textarea id="mensagem" name="mensagem" type="text" placeholder="Sua mensagem"></textarea>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
             <br/>
 
             <button type="submit">enviar</button>
-            </form>  
-        </div>    
+            <p id="msgErro"></p>
+            </form>
+        </div>
     </main>
 
     <footer>
         <span>© 2026 - Selton & Clarissa</span>
     </footer>
+    <script src="../js/contato.js"></script>
 </body>
 </html>

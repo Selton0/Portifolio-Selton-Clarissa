@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
+        <button class="menu-toggle">⌨</button>
         <h3>Portfólio SI</h3>
-        <nav>
+        <nav class="menu">
             <a href="sobre.html" >Sobre</a>
             <a href="habilidades.html" >Habilidades</a>
             <a href="cursos.html" >Cursos</a>
@@ -21,24 +24,32 @@
         <hr>
 
         <main>
-        <div class="container">
-            <div class="pessoa">
-                <h2>Selton</h2>
-                <img src="selton.jpeg" width="220" alt="Foto de Selton à noite, com cabelo cacheado">
-                <p>Sou estudante de Sistemas de informação e estou no 4° período</p>
-            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
 
-            <div class="pessoa">
-                <h2>Clarissa</h2>
-                <!-- coloca tua foto aqui Clarissa -->
-                <p>Sou estudante de Sistemas de informação e estou no 4° período</p>
+                        <div class="pessoa">
+                            <h2>Selton</h2>
+                            <img src="selton.jpeg" class="img-fluid" alt="Foto de Selton à noite, com cabelo cacheado">
+                            <p>Sou estudante de Sistemas de informação e estou no 4° período</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="pessoa">
+                        <h2>Clarissa</h2>
+                        <img src="clarissa.jpeg" class="img-fluid" width="730">
+                        <p>Sou estudante de Sistemas de informação e estou no 4° período</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         </main>
-
-
+        
         <footer>
             <span>© 2026 - Selton & Clarissa</span>
         </footer>
+
+        <script src="../js/index.js"></script>
 </body>
 </html>

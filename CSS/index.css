@@ -7,12 +7,13 @@ header {
     display: flex;
     background-color: rgb(68, 68, 68);
     padding: 0px;
-    justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin: 0px;
+    justify-content: space-between;
 } 
 
-header h3, a{
+header h3, 
+header a{
     color: whitesmoke;
     margin: 10px;
 }
@@ -26,13 +27,6 @@ h2, p {
     color:  rgb(68, 68, 68);
     margin-left: 60px;
     margin-right: 60px;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
 }
 
 .pessoa {
@@ -58,4 +52,34 @@ footer {
 span {
     color: whitesmoke;
     font-size: medium;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none; /* 👈 ESSENCIAL */
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(68, 68, 68);
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
