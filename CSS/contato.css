@@ -1,6 +1,10 @@
 body {
     font-style: initial;
     margin: 0px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 header {
@@ -9,12 +13,16 @@ header {
     padding: 0px;
     justify-content: space-between;
     align-items: center;
-    margin: 0px;
 } 
 
-header h3, a{
+header h3, header a {
     color: whitesmoke;
     margin: 10px;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; 
 }
 
 h1 {
@@ -22,30 +30,57 @@ h1 {
     margin: 20px;
 }
 
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
 .form-box {
     background-color: rgb(196, 185, 155);
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
-    width: 300px;
-    margin: 20px;
+    width: 350px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-size: large;
 }
 
 .form-box label {
     display: block;
     margin-top: 10px;
+    color: rgb(68, 68, 68);
 }
+
+.form-box input, .form-box textarea {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 footer {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(68, 68, 68); 
     padding: 20px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
 }
 
-span {
-    color: whitesmoke;
-    font-size: medium;
+footer span {
+    color: whitesmoke; 
+    font-size: 16px;
 }
