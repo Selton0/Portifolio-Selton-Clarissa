@@ -1,0 +1,38 @@
+
+.container-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.box-sobre {
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(196, 185, 155); 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); 
+    padding: 40px;
+    width: 350px;
+    min-height: 300px;
+}
+
+.box-sobre h2 {
+    margin-left: 0; 
+    margin-right: 0;
+    margin-bottom: 15px;
+    color: rgb(68, 68, 68);
+}
+
+.box-sobre p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(68, 68, 68);
+    line-height: 1.5;
+}
