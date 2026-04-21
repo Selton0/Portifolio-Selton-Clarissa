@@ -1,0 +1,50 @@
+.container-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.box-habilidade {
+    background-color: rgb(196, 185, 155);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+}
+
+.box-habilidade h2 {
+    text-align: center;
+    color: rgb(68, 68, 68);
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item span {
+    color: rgb(68, 68, 68);
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    height: 15px;
+    width: 100%;
+}
+
+.fill {
+    background-color: rgb(68, 68, 68); 
+    height: 100%;
+    border-radius: 20px;
+}
