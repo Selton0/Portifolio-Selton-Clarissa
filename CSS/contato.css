@@ -15,9 +15,11 @@ header {
     align-items: center;
 } 
 
+/* Ajuste feito aqui: */
 header h3, header a {
     color: whitesmoke;
     margin: 10px;
+    text-decoration: none;
 }
 
 main {
@@ -69,7 +71,6 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 footer {
     background-color: rgb(68, 68, 68); 
