@@ -19,18 +19,49 @@
     text-align: center;
     color: rgb(68, 68, 68);
     margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.5); 
-    border-radius: 5px;
+    border-radius: 8px;
+    overflow: hidden; 
 }
 
-th, td {
+th {
+    background-color: rgba(68, 68, 68, 0.1); 
+    padding: 12px;
+    border-bottom: 2px solid rgba(68, 68, 68, 0.3);
+    text-align: left;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
     padding: 12px;
     border-bottom: 1px solid rgba(68, 68, 68, 0.2);
     text-align: left;
     color: rgb(68, 68, 68);
+    font-size: 0.95rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(68, 68, 68);
+    margin-top: 30px;
+}
+
+hr {
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid rgb(196, 185, 155);
 }
