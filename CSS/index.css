@@ -1,57 +1,20 @@
 body {
     font-style: initial;
     margin: 0px;
+    background-color: #f4f4f4; 
 }
 
 header {
     display: flex;
     background-color: rgb(68, 68, 68);
-    padding: 0px;
-    align-items: start;
-    margin: 0px;
+    padding: 10px 20px;
+    align-items: center;
     justify-content: space-between;
 } 
 
-header h3, 
-header a{
+header h3 {
     color: whitesmoke;
-    margin: 10px;
-}
-
-h1 {
-    color: rgb(68, 68, 68);
-    margin: 20px;
-}
-
-h2, p {
-    color:  rgb(68, 68, 68);
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.pessoa {
-    text-align: center;
-    margin: 20px;
-    background-color: rgb(196, 185, 155);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-footer {
-    background-color: rgb(68, 68, 68);
-    padding: 20px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-}
-
-span {
-    color: whitesmoke;
-    font-size: medium;
+    margin: 0;
 }
 
 .menu {
@@ -59,27 +22,69 @@ span {
     gap: 15px;
 }
 
+header a {
+    color: whitesmoke;
+    text-decoration: none; 
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.pagina-atual {
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ccc; 
+}
+
+h1 {
+    color: rgb(68, 68, 68);
+    margin: 20px;
+}
+
+
+.pessoa {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(196, 185, 155);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pessoa h2, .pessoa p {
+    margin-left: 0;
+    margin-right: 0;
+    color: rgb(68, 68, 68);
+}
+
+footer {
+    background-color: rgb(68, 68, 68);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer span {
+    color: whitesmoke;
+}
+
+/* Menu Responsivo */
 .menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {
-
-    .menu {
-        display: none; 
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(68, 68, 68);
-        position: absolute;
-        right: 0;
-        top: 60px;
-        padding: 10px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
+    .menu { display: none; }
+    .menu-toggle { display: block; }
 }
